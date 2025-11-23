@@ -57,6 +57,6 @@ Dime como nombrar el archivo descargado: ejemplo
 Documento guardado satisfactoriamente en ejemplo.html
 Abriendo archivo ...
 ```
-## Tech Stack
+## Desarrollo
 
 Todos los archivos necesarios para el correcto funcionamiento de ambos programas presentados se encuentran desarrollados en **Python**.

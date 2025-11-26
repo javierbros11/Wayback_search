@@ -31,10 +31,13 @@ pip install requests waybackpy
 
 - Si el programa tarda demasiado en buscar resultados al hacer una consulta y devuelve un **error 504**: 
 
+```bash
+waybackpy.exceptions NoCDXRecordFound: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+```
 
-**"waybackpy.exceptions NoCDXRecordFound: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server."**
-
-**"requests.exceptions.RetryError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /cdx/search/cdx?from=20241112&to=20241212&gzip=false&matchType=domain&filter=urlkey%3A%28.%2A%5C.pdf%24%7C.%2A%5C.doc%24%7C.%2A%5C.docx%24%7C.%2A%5C.ppt%24%7C.%2A%5C.xls%24%7C.%2A%5C.xlsx%24%7C.%2A%5C.txt%24%29&url=udemy.com&showResumeKey=true&limit=25000 (Caused by ResponseError('too many 504 error responses'))"**
+```bash
+requests.exceptions.RetryError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /cdx/search/cdx?from=20241112&to=20241212&gzip=false&matchType=domain&filter=urlkey%3A%28.%2A%5C.pdf%24%7C.%2A%5C.doc%24%7C.%2A%5C.docx%24%7C.%2A%5C.ppt%24%7C.%2A%5C.xls%24%7C.%2A%5C.xlsx%24%7C.%2A%5C.txt%24%29&url=udemy.com&showResumeKey=true&limit=25000 (Caused by ResponseError('too many 504 error responses'))
+```
 
 Suele tratarse de una limitación del buscador de Waybackmachine no del script.
 
